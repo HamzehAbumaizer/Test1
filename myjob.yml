@@ -1,12 +1,16 @@
 ---
-- name: Install httpd Package
-  yum: name=httpd state=latest
-  notify:
-  - restart apache
-- name: Start and Enable httpd service
-  service: name=httpd state=restarted enabled=yes
-- name: upgrade all packages, excluding kernel & foo related packages
-  yum:
-    name: '*'
-    state: latest
+- name: My Job Playbook
+  hosts: all
+  tasks:
+
+   - name: Install httpd Package
+     yum: name=httpd state=latest
+     notify:
+      - restart apache
+   - name: Start and Enable httpd service
+     service: name=httpd state=restarted enabled=yes
+   - name: upgrade all packages, excluding kernel & foo related packages
+     yum:
+       name: '*'
+       state: latest
     
