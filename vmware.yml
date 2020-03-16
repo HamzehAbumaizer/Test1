@@ -6,11 +6,11 @@
   gather_facts: false
   connection: local
   vars:
-    vcenter_hostname: vcenter-hostname
-    vcenter_user: administrator@vsphere.local
-    vcenter_pass: password
-    esxhost: 192.168.1.100
-    datastore: datastore01
+    vcenter_hostname: vware.optimiza.ads
+    vcenter_user: root
+    vcenter_pass: Ha_root123
+    esxhost: 172.16.0.38
+    datastore: DataStore2
     vmtemplate: VM01
     name: "newvm"
     notes: Ansible Test
