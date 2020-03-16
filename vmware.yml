@@ -6,11 +6,11 @@
   tasks:
   - name: Clone the template
     vmware_guest:
-      hostname: 192.0.2.44
-      username: administrator@vsphere.local
-      password: vmware
+      hostname: 172.16.0.38
+      username: root
+      password: Ha_root123
       validate_certs: False
-      name: testvm_2
+      name: Zabbix
       template: template_el7
       datacenter: DC1
       folder: /DC1/vm
