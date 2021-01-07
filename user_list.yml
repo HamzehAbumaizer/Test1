@@ -1,0 +1,9 @@
+---
+ - webmanager:
+ - username: jill
+ job: developer
+ - username: jack
+ job: manager
+ - db:
+ - username: joe
+ job: developer
